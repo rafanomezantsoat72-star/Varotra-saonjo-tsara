@@ -2,7 +2,21 @@
 HTML
 <!DOCTYPE html>
 <html lang="fr">
-<head><style>/* HERO */
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SONJO TAX</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial;
+    background:#0f5f2f;
+    color:white;
+/* HERO */
 
 .hero{
     text-align:center;
@@ -19,20 +33,6 @@ HTML
     font-size:20px;
     color:white;
 }
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>SONJO TAX</title><\style><\head>
-
-<style>
-
-body{
-    margin:0;
-    padding:0;
-    font-family:Arial;
-    background:#0f5f2f;
-    color:white;
 
 /* BOUTON */
 
@@ -124,70 +124,12 @@ nav a{
 
 </style>
 </head>
-/* HERO */
 
-.hero{
-    text-align:center;
-    padding:60px 20px;
-    background:linear-gradient(green,#0f5f2f);
-}
+<body>
 
-.hero h1{
-    font-size:40px;
-    color:yellow;
-}
-
-.hero p{
-    font-size:20px;
-    color:white;
-}
-
-/* BOUTON */
-
-.btn{
-    display:inline-block;
-    padding:12px 25px;
-    background:blue;
-    color:white;
-    text-decoration:none;
-    border-radius:10px;
-    margin-top:20px;
-    font-weight:bold;
-}
-
-/* GALERIE */
-
-.gallery{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
-    padding:20px;
-}
-
-.gallery img{
-    width:250px;
-    border-radius:15px;
-    border:3px solid yellow;
-}
-
-/* VIDEO */
-
-video{
-    width:90%;
-    border-radius:15px;
-    margin:20px auto;
-    display:block;
-}
-
-/* FOOTER */
-
-footer{
-    background:black;
-    text-align:center;
-    padding:20px;
-    color:white;
-}>
+<nav>
+<a href="#">Accueil</a>
+<a href="#">Galerie</a>
 <a href="#">Vidéo</a>
 <a href="#">Contact</a>
 </nav>
@@ -216,11 +158,11 @@ Hifandray aminay
 
 <div class="images">
 
-<img src="Sonjotax.jpg" alt="Sonjo">
+<img src="saonjoko.jpg" alt="Sonjo">
 
-<img src="Sonjotax.jpg" alt="Sonjo">
+<img src="saonjoko.jpg" alt="Sonjo">
 
-<img src="Sonjotax.jpg" alt="Sonjo">
+<img src="saonjoko.jpg" alt="Sonjo">
 
 </div>
 
@@ -264,7 +206,7 @@ Hifandray aminay
 <h2>Vidéo</h2>
 
 <video controls>
-<source src="video.mp4" type="video/mp4">
+<source src="ub40.mp4" type="video/mp4">
 </video>
 
 </section>
@@ -279,7 +221,7 @@ Hifandray aminay
 Facebook
 </a>
 
-<a href="https://wa.me/261000000000" class="wa">
+<a href="https://wa.me/2610383189778" class="wa">
 WhatsApp
 </a>
 
@@ -429,7 +371,7 @@ nav a{
 }
 
 .hero h1{
-    font-size:36px;
+    font-size:35px;
 }
 
 .galerie h2,
@@ -734,70 +676,11 @@ opacity:1;
 
 let compteur = 0;
 
-let interval = setInterval(/* HERO */
+let interval = setInterval(()=>{
 
-.hero{
-    text-align:center;
-    padding:60px 20px;
-    background:linear-gradient(green,#0f5f2f);
-}
+compteur++;
 
-.hero h1{
-    font-size:40px;
-    color:yellow;
-}
-
-.hero p{
-    font-size:20px;
-    color:white;
-}
-
-/* BOUTON */
-
-.btn{
-    display:inline-block;
-    padding:12px 25px;
-    background:blue;
-    color:white;
-    text-decoration:none;
-    border-radius:10px;
-    margin-top:20px;
-    font-weight:bold;
-}
-
-/* GALERIE */
-
-.gallery{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
-    padding:20px;
-}
-
-.gallery img{
-    width:250px;
-    border-radius:15px;
-    border:3px solid yellow;
-}
-
-/* VIDEO */
-
-video{
-    width:90%;
-    border-radius:15px;
-    margin:20px auto;
-    display:block;
-}
-
-/* FOOTER */
-
-footer{
-    background:black;
-    text-align:center;
-    padding:20px;
-    color:white;
-}compteur;
+document.getElementById("compteur").innerHTML = compteur;
 
 if(compteur >= 100){
 
